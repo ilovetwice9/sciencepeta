@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Article Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Artistic Article Website</h1>
+</header>
+
+<!-- Secret Code Form -->
+<section id="secret-code-form">
+    <h2>Enter Secret Code to Upload Your Work</h2>
+    <form id="code-form">
+        <label for="secret-code">Secret Code:</label>
+        <input type="password" id="secret-code" name="secret-code" required>
+        <button type="button" onclick="checkSecretCode()">Submit Code</button>
+    </form>
+</section>
+
+<!-- Upload Form (Initially Hidden) -->
+<section id="upload-form" style="display: none;">
+    <h2>Upload Work</h2>
+    <form id="article-form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" rows="4" required></textarea>
+        <label for="author">Author (Your Name):</label>
+        <input type="text" id="author" name="author" required>
+        <label for="references">References:</label>
+        <textarea id="references" name="references" rows="2"></textarea>
+        <button type="submit">Submit </button>
+    </form>
+</section>
+
+<!-- Articles -->
+<section id="articles">
+    <!-- Articles will be dynamically added here using JavaScript -->
+</section>
+
+<script src="scripts.js"></script>
+</body>
+</html>
